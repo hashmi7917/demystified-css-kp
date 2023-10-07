@@ -34,10 +34,248 @@ body {
   display: flex;
   justify-content: center;
   align-content: center;
+  margin: 0 auto;
+  font-size: 15px;
 }
 
 .container {
   width: 100%;
-  height: 100%;
-  max-width: 1440px;
+  max-width: 1010px;
+  max-height: 805px;
+  display: grid;
+  column-gap: 20px;
+  grid-template-columns: repeat(3, 1.4fr);
+  grid-template-rows: 0.5fr 2fr 1.5fr 0.5fr;
+  grid-template-areas:
+    'nav nav nav'
+    'header header aside'
+    'main main aside'
+    'section section section';
+  transition: all 0.3s ease-in-out;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+li {
+  padding: 1rem;
+}
+
+nav {
+  /* max-height: 100px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-area: nav;
+}
+
+.logo > img {
+  width: fit-content;
+  max-width: 50px;
+  height: fit-content;
+}
+
+header {
+  width: 100%;
+  max-height: 300px;
+  background-image: url('./assets/images/image-web-3-desktop.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-area: header;
+}
+
+main {
+  width: 100%;
+  max-height: 220px;
+  display: flex;
+  justify-content: space-between;
+  grid-area: main;
+  /* padding: 0.8rem 0 0.8rem 0; */
+  padding-bottom: 1rem;
+}
+
+h1 {
+  width: 100%;
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--Very-dark-blue);
+  letter-spacing: 1.6px;
+}
+
+p {
+  font-size: 16px;
+  width: 100%;
+  color: var(--Dark-grayish-blue);
+  line-height: 1.8;
+}
+.news_reading {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+button {
+  /* width: 50%; */
+  text-transform: uppercase;
+  background-color: var(--Soft-red);
+  color: var(--Off-white);
+  letter-spacing: 1.6px;
+  padding: 0.8rem 2.2rem;
+  border-style: none;
+}
+
+aside {
+  max-height: 510px;
+  width: 100%;
+  padding: 2.5rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: var(--Very-dark-blue);
+  grid-area: aside;
+}
+
+h4 {
+  color: var(--Soft-orange);
+  font-size: 1.8rem;
+}
+h6 {
+  color: var(--Off-white);
+  font-size: 1.2rem;
+}
+aside span {
+  color: var(--Grayish-blue);
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+hr {
+  border: 0;
+  border-bottom: 1px solid var(--Dark-grayish-blue);
+  background: var(--Dark-grayish-blue);
+}
+
+aside div {
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+section {
+  max-width: max-content;
+  display: flex;
+  grid-area: section;
+  justify-content: space-evenly;
+  padding-bottom: 2rem;
+}
+
+.box {
+  width: 100%;
+  max-width: 350px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.box img {
+  max-width: 100px;
+  max-height: 147px;
+  object-fit: cover;
+}
+
+h5 {
+  font-size: 1.6rem;
+  color: var(--Grayish-blue);
+}
+
+.box_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0 1rem;
+}
+
+.box:nth-child(3) {
+  padding-left: 1.6rem;
+}
+
+.box_content p {
+  color: var(--Very-dark-blue);
+  font-weight: 800;
+}
+
+.box_content span {
+  color: var(--Dark-grayish-blue);
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.box_content > p:hover,
+li:hover {
+  color: var(--Soft-red);
+}
+
+@media screen and (max-width: 1030px) {
+  .container {
+    width: 90%;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 924px) {
+  .container {
+    width: 85%;
+  }
+  main {
+    width: 100%;
+    height: 100%;
+    justify-content: space-;
+    align-items: center;
+  }
+  h1 {
+    font-size: 2.4rem;
+  }
+  p {
+    font-size: 12px;
+  }
+  button {
+    padding: 0.8rem 2rem;
+  }
+  .box_content {
+    padding: 0 0.5rem;
+  }
+
+  aside {
+    max-height: 90%;
+    padding: 1rem;
+  }
+  aside div {
+    height: 20%;
+  }
+  h4 {
+    font-size: 1.4rem;
+  }
+  h5 {
+    font-size: 1.4rem;
+  }
+  h6 {
+    font-size: 1rem;
+  }
+  section {
+    height: 90%;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    height: 90%;
+  }
 }
