@@ -134,9 +134,9 @@ button {
 }
 
 button:hover {
-  outline: 2px solid var(--Soft-red);
-  background-color: var(--Soft-orange);
+  background-color: var(--Very-dark-blue);
   transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  cursor: pointer;
 }
 
 aside {
@@ -227,9 +227,18 @@ h5 {
   line-height: 1.6;
 }
 
-.sidebar > span a:hover,
+aside h6:hover {
+  color: var(--Soft-orange);
+  cursor: pointer;
+}
+
 .box_content > p:hover,
 li:hover {
+  color: var(--Soft-red);
+  cursor: pointer;
+}
+
+.sidebar > span a:hover {
   color: var(--Soft-red);
 }
 

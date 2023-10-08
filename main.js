@@ -14,6 +14,19 @@ anime({
   duration: 3000,
 });
 
+anime({
+  targets: 'main p',
+  translateX: [100, 0],
+  opacity: [0, 1],
+  duration: 3000,
+});
+
+anime({
+  targets: 'button',
+  translateX: [-100, 0],
+  opacity: [0, 1],
+  duration: 3000,
+});
 function openNav() {
   document.getElementById('sidemenu').style.width = '250px';
 }
