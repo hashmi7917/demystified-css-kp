@@ -28,10 +28,10 @@ Users should be able to:
 ### Screenshot
 
 #Desktop
-![Screenshot 2023-10-08 at 12 50 50 PM](https://github.com/hashmi7917/news-homepage-layout/assets/38833326/95b22dcd-4492-49d7-b2fc-fc3ed5f52062)
+![Screenshot 2023-10-08 at 1 31 18 PM](https://github.com/hashmi7917/news-homepage-layout/assets/38833326/816b8896-78f9-4d56-aa93-4229eb3bf118)
 
 #Mobile
-![Screenshot 2023-10-08 at 12 50 19 PM](https://github.com/hashmi7917/news-homepage-layout/assets/38833326/fdfbe947-a533-40dc-821f-b2ed01b6e575)
+![Screenshot 2023-10-08 at 1 30 18 PM](https://github.com/hashmi7917/news-homepage-layout/assets/38833326/44041eff-7724-4ccf-a3b2-e4ed1f9fb7f8)
 
 ### Links
 
