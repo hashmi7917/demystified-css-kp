@@ -227,12 +227,35 @@ h5 {
   line-height: 1.6;
 }
 
+.sidebar > span a:hover,
 .box_content > p:hover,
 li:hover {
   color: var(--Soft-red);
 }
 
-/* Desktop to Tablet */
+#open,
+#close {
+  cursor: pointer;
+}
+
+#open:active {
+  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+  cursor: pointer;
+}
+#close:active {
+  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+  cursor: pointer;
+}
+
+header:hover {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.sidebar {
+  display: none;
+}
+/* Desktop to Mobile */
+/* dont tell me that why i dont start with mobile first workflow 😂 */
 
 @media screen and (max-width: 1030px) {
   .container {
@@ -480,5 +503,57 @@ li:hover {
   }
   .box:nth-child(3) {
     padding-left: 0;
+  }
+  .sidebar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    background-color: #fff;
+    bottom: 10px;
+    right: 80px;
+    z-index: 999;
+    transition: all 0.3s;
+    overflow-x: hidden;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  .sidebar > span {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+  .sidebar > span a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--Dark-grayish-blue);
+    padding: 1rem;
+  }
+  .close_menu {
+    max-width: 90px;
+    position: absolute;
+    right: 20px;
+    top: 35px;
+  }
+}
+
+@keyframes ping {
+  75%,
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
   }
 }

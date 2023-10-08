@@ -10,7 +10,6 @@
       href="./assets/images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="style.css" />
-
     <title>Frontend Mentor | News homepage</title>
   </head>
   <!-- 1010w 805h -->
@@ -28,11 +27,29 @@
           <li>Categories</li>
         </ul>
         <img
+          id="open"
+          onclick="openNav()"
           style="display: none"
           class="menu_icon"
           src="./assets/images/icon-menu.svg"
           alt="menu-bar"
         />
+        <div id="sidemenu" class="sidebar">
+          <img
+            id="close"
+            onclick="closeNav()"
+            class="close_menu"
+            src="./assets/images/icon-menu-close.svg"
+            alt="close-menu"
+          />
+          <span>
+            <a href="#">Home</a>
+            <a href="#">New</a>
+            <a href="#">Popular</a>
+            <a href="#">Trending</a>
+            <a href="#">Categories</a>
+          </span>
+        </div>
       </nav>
       <header></header>
 
