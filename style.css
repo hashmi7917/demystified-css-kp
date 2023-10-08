@@ -358,13 +358,13 @@ li:hover {
   .container {
     margin: 0 auto;
     max-width: 375px;
-    height: max-content;
+    height: 100%;
+    min-height: 1800px;
     display: flex;
     flex-direction: column;
-    max-width: 375px;
     justify-items: center;
     align-content: center;
-    row-gap: 10px;
+    row-gap: 20px;
     grid-template-columns: 1, 1fr;
     grid-template-rows: repeat(5, 1fr);
     grid-template-areas:
@@ -390,7 +390,7 @@ li:hover {
   }
   header {
     margin: 0 auto;
-    width: 100%;
+    width: 90%;
     min-height: 300px;
     max-width: 340px;
     background-image: url('./assets/images/image-web-3-mobile.jpg');
@@ -402,11 +402,11 @@ li:hover {
     min-height: 350px;
     width: 90%;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding: 0.8rem 1.2rem;
   }
   .news_reading {
-    min-height: 200px;
+    min-height: 220px;
     justify-content: space-around;
     height: 100%;
   }
@@ -427,52 +427,55 @@ li:hover {
   }
   aside {
     margin: 0 auto;
-    min-height: 480px;
+    min-height: 450px;
     width: 90%;
-    padding: 0 1.8rem;
+    padding: 0 1rem;
     justify-content: space-evenly;
   }
   h4 {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
   }
   h6 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
-  aside span {
-    font-size: 0.75rem;
-    letter-spacing: 1.1px;
+  aside > div > span {
+    font-size: 0.76rem;
+    letter-spacing: 1px;
     line-height: 1.8;
     font-weight: 400;
   }
 
-  aside div {
+  aside > div {
     width: 100%;
-    min-height: 75px;
+    min-height: 80px;
     height: initial;
     justify-content: space-around;
   }
   section {
-    margin: 0 auto;
-    min-height: 600px;
+    max-height: 420px;
     width: 90%;
+    margin: 0 auto;
     flex-direction: column;
-    justify-content: space-between;
-    padding-top: 2.5rem;
+    justify-content: space-evenly;
   }
   h5 {
     font-size: 1.8rem;
   }
   .box {
-    justify-content: space-between;
+    max-height: 100px;
+    justify-content: space-evenly;
+  }
+  .box img {
+    max-height: 100px;
   }
   .box_content p {
     font-size: 1rem;
   }
   .box_content span {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
   .box_content {
-    padding: 0 1.1rem;
+    padding: 0 1rem;
     justify-content: space-evenly;
   }
   .box:nth-child(3) {
