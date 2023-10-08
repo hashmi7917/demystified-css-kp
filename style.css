@@ -38,6 +38,7 @@ body {
   align-content: center;
   margin: 0 auto;
   font-size: 15px;
+  background-color: var(--Off-white);
 }
 
 .container {
@@ -53,8 +54,6 @@ body {
     'header header aside'
     'main main aside'
     'section section section';
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 200px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -396,6 +395,8 @@ header:hover {
     flex-direction: column;
     justify-items: center;
     align-content: center;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+      rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     row-gap: 20px;
     grid-template-columns: 1, 1fr;
     grid-template-rows: repeat(5, 1fr);
